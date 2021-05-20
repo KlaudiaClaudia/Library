@@ -1,6 +1,7 @@
 package pl.klaudia.library.io;
 
 import pl.klaudia.library.model.Book;
+import pl.klaudia.library.model.Magazine;
 
 import java.util.Scanner;
 
@@ -33,5 +34,20 @@ public class DataReader {
         sc.nextLine();
 
         return new Book(title,author,releaseDate,pages,publisher,isbn);
+    }
+    public Magazine readAndCreateMagazine(){
+        System.out.println("Title: ");
+        String title = sc.nextLine();
+        System.out.println("Publisher: ");
+        String publisher = sc.nextLine();
+        System.out.println("Language: ");
+        String language = sc.nextLine();
+        System.out.println("Publication year: ");
+        int year = getInt();
+        System.out.println("Month: ");
+        int month = getInt();
+        System.out.println("Day: ");
+        int day = getInt();
+        return new Magazine(title,publisher,language,year,month,day);
     }
 }
