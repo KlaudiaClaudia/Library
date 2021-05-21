@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="LibraryControl: loop for user option&#10;LibraryApp: main class for program">
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
-    </list>
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Added option for magazines, similar as book" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,19 +49,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LibraryApp" />
@@ -87,7 +66,7 @@
       <updated>1621511561653</updated>
       <workItem from="1621511562953" duration="5000" />
       <workItem from="1621511795119" duration="3856000" />
-      <workItem from="1621532942368" duration="1614000" />
+      <workItem from="1621532942368" duration="1749000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -124,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621515654395</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added option for magazines, similar as book">
+      <created>1621534643036</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621534643036</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +134,7 @@
     <MESSAGE value="Package io (input/output) for DataReader class" />
     <MESSAGE value="Created menu for data from user" />
     <MESSAGE value="LibraryControl: loop for user option&#10;LibraryApp: main class for program" />
-    <option name="LAST_COMMIT_MESSAGE" value="LibraryControl: loop for user option&#10;LibraryApp: main class for program" />
+    <MESSAGE value="Added option for magazines, similar as book" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added option for magazines, similar as book" />
   </component>
 </project>
