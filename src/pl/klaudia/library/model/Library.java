@@ -2,34 +2,35 @@ package pl.klaudia.library.model;
 
 public class Library {
 
-    private static final int MAX_BOOKS = 100;
-    private static final int MAX_MAGAZINES = 1000;
-    private Book[] books = new Book[MAX_BOOKS];
-    private Magazine[] magazines = new Magazine[MAX_MAGAZINES];
-    private int booksNumber;
-    private int magazinesNumber;
+    private static final int MAX_PUBLICATIONS = 2000;
+    private int publicationNumber;
+    private Publication[] publications = new Publication[MAX_PUBLICATIONS];
+
 
     public void addBook(Book book){
-        if (booksNumber < MAX_BOOKS){
-            books[booksNumber] = book;
-            booksNumber ++;
+        if (publicationNumber < MAX_PUBLICATIONS){
+            publications[publicationNumber] = book;
+            publicationNumber ++;
         }else {
             System.out.println("The maximum number of books has been reached");
         }
     }
     public void printBooks(){
-        if (booksNumber== 0){
-            System.out.println("No books in the library");
+        int countBooks = 0;
+        for (int i = 0; i < publicationNumber; i++) {
+            if (publications[i]instanceof Book){
+                publications[i].printInfo();
+                countBooks++;
+            }
         }
-        for (int i = 0; i < booksNumber; i++) {
-            books[i].printInfo();
-
+        if (countBooks==0){
+            System.out.println("No books in the library");
         }
     }
     public void addMagazine(Magazine magazine) {
-        if(magazinesNumber < MAX_MAGAZINES) {
-            magazines[magazinesNumber] = magazine;
-            magazinesNumber++;
+        if(publicationNumber < MAX_PUBLICATIONS) {
+            publications[publicationNumber] = magazine;
+            publicationNumber++;
         } else {
             System.out.println("The maximum number of magazines has been reached");
         }
@@ -37,11 +38,15 @@ public class Library {
     }
 
     public void printMagazines() {
-        if (magazinesNumber == 0) {
-            System.out.println("No magazines in the library");
+        int countMagazines =0;
+        for (int i = 0; i <publicationNumber ; i++) {
+            if (publications[i]instanceof Magazine){
+                publications[i].printInfo();
+                countMagazines++;
+            }
         }
-        for (int i = 0; i < magazinesNumber; i++) {
-            magazines[i].printInfo();
+        if (countMagazines==0){
+            System.out.println("No magazines in the library");
         }
     }
 
