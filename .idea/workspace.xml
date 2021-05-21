@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Super construction for Book and Magazine class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" afterDir="false" />
-    </list>
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Used polymorphism for objects Book and Magazine" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +67,7 @@
       <workItem from="1621511562953" duration="5000" />
       <workItem from="1621511795119" duration="3856000" />
       <workItem from="1621532942368" duration="1749000" />
-      <workItem from="1621591686572" duration="610000" />
+      <workItem from="1621591686572" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -122,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621591924233</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Used polymorphism for objects Book and Magazine">
+      <created>1621592625732</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621592625732</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +151,7 @@
     <MESSAGE value="LibraryControl: loop for user option&#10;LibraryApp: main class for program" />
     <MESSAGE value="Added option for magazines, similar as book" />
     <MESSAGE value="Super construction for Book and Magazine class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Super construction for Book and Magazine class" />
+    <MESSAGE value="Used polymorphism for objects Book and Magazine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Used polymorphism for objects Book and Magazine" />
   </component>
 </project>
