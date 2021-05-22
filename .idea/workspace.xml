@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="ConsolePrinter class for printing books and magazines&#10;printLine method for not using sout everywhere">
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/NoSuchOptionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
-    </list>
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +83,7 @@
       <workItem from="1621532942368" duration="1749000" />
       <workItem from="1621591686572" duration="1502000" />
       <workItem from="1621601133678" duration="1154000" />
-      <workItem from="1621674311001" duration="1981000" />
+      <workItem from="1621674311001" duration="2367000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -197,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621674923988</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer">
+      <created>1621676497411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621676497411</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +231,7 @@
     <MESSAGE value="Enum class for options, deleted final variable , shorter print options method" />
     <MESSAGE value="Siplify Library class, added exception" />
     <MESSAGE value="ConsolePrinter class for printing books and magazines&#10;printLine method for not using sout everywhere" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConsolePrinter class for printing books and magazines&#10;printLine method for not using sout everywhere" />
+    <MESSAGE value=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer" />
+    <option name="LAST_COMMIT_MESSAGE" value=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer" />
   </component>
 </project>
