@@ -2,12 +2,19 @@ package pl.klaudia.library.model;
 
 public class Library {
 
-    private static final int MAX_PUBLICATIONS = 2000;
-    private int publicationNumber;
-    private Publication[] publications = new Publication[MAX_PUBLICATIONS];
+    private static final int MAX_PUBLICATONS = 2000;
+    private int publicationsNumber;
+    private Publication[] publications = new Publication[MAX_PUBLICATONS];
 
+    public Publication[] getPublications() {
+        Publication[] result = new Publication[publicationsNumber];
+        for (int i = 0; i < publicationsNumber; i++) {
+            result[i] = publications[i];
+        }
+        return result;
+    }
 
-    public void addBook(Book book){
+    public void addBook(Book book) {
         addPublication(book);
     }
 
@@ -16,12 +23,10 @@ public class Library {
     }
 
     private void addPublication(Publication publication) {
-        if (publicationNumber>= MAX_PUBLICATIONS){
-            throw new ArrayIndexOutOfBoundsException("Max publications exceeded " + MAX_PUBLICATIONS);
+        if (publicationsNumber >= MAX_PUBLICATONS) {
+            throw new ArrayIndexOutOfBoundsException("Max publications exceeded " + MAX_PUBLICATONS);
         }
-        publications[publicationNumber]= publication;
-        publicationNumber++;
+        publications[publicationsNumber] = publication;
+        publicationsNumber++;
     }
-
-
 }

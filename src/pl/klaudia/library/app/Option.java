@@ -1,5 +1,7 @@
 package pl.klaudia.library.app;
 
+import pl.klaudia.library.exception.NoSuchOptionException;
+
 enum Option {
     EXIT(0, "Exit the program"),
     ADD_BOOK(1, "Add new book"),
@@ -27,7 +29,12 @@ enum Option {
     public String toString() {
         return value + "-" + description;
     }
-    static Option createFromInt(int option){
-        return Option.values()[option];
+    static Option createFromInt(int option) throws NoSuchOptionException {
+        try {
+            return Option.values()[option];
+        }catch (ArrayIndexOutOfBoundsException e){
+            throw new NoSuchOptionException("No option for id " + option);
+        }
+
     }
 }
