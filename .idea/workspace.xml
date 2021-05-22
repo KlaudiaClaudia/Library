@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Deleted printInfo method">
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/Option.java" afterDir="false" />
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Enum class for options, deleted final variable , shorter print options method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +53,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LibraryApp" />
@@ -84,7 +72,8 @@
       <workItem from="1621511795119" duration="3856000" />
       <workItem from="1621532942368" duration="1749000" />
       <workItem from="1621591686572" duration="1502000" />
-      <workItem from="1621601133678" duration="913000" />
+      <workItem from="1621601133678" duration="1154000" />
+      <workItem from="1621674311001" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -170,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621593145163</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Enum class for options, deleted final variable , shorter print options method">
+      <created>1621602239503</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621602239503</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +197,7 @@
     <MESSAGE value="toString, equals and hashCode in Book" />
     <MESSAGE value="toString, equals and hashCode in Magazine" />
     <MESSAGE value="Deleted printInfo method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted printInfo method" />
+    <MESSAGE value="Enum class for options, deleted final variable , shorter print options method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enum class for options, deleted final variable , shorter print options method" />
   </component>
 </project>
