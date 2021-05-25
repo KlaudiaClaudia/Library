@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="prevent someone from accidentally creating a Publication object in the program">
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all">
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataExportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataImportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/NoSuchFileTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManagerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/SerializableFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
       </list>
@@ -52,15 +62,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +93,9 @@
       <workItem from="1621532942368" duration="1749000" />
       <workItem from="1621591686572" duration="1502000" />
       <workItem from="1621601133678" duration="1154000" />
-      <workItem from="1621674311001" duration="2670000" />
+      <workItem from="1621674311001" duration="2858000" />
+      <workItem from="1621682949121" duration="556000" />
+      <workItem from="1621936187140" duration="1139000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -206,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621676730546</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all">
+      <created>1621677145160</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621677145160</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +259,7 @@
     <MESSAGE value="ConsolePrinter class for printing books and magazines&#10;printLine method for not using sout everywhere" />
     <MESSAGE value=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer" />
     <MESSAGE value="prevent someone from accidentally creating a Publication object in the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="prevent someone from accidentally creating a Publication object in the program" />
+    <MESSAGE value="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all" />
   </component>
 </project>
