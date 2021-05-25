@@ -8,7 +8,7 @@ import java.io.*;
 
 public class SerializableFileManager implements FileManager {
 
-    private static final String FILE_NAME = "Library.o";
+    private static final String FILE_NAME = "Library.lib";
 
     @Override
     public Library importData() {
