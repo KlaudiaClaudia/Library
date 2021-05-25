@@ -12,6 +12,9 @@ public class DataReader {
     public DataReader(ConsolePrinter printer) {
         this.printer = printer;
     }
+    public String getString(){
+        return sc.nextLine();
+    }
 
     public void close(){
         sc.close();
@@ -57,4 +60,5 @@ public class DataReader {
         int day = getInt();
         return new Magazine(title,publisher,language,year,month,day);
     }
+
 }

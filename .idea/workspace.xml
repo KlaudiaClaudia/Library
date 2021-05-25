@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all">
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataExportException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataImportException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/NoSuchFileTypeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManagerBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/SerializableFileManager.java" afterDir="false" />
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Exception classes created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataExportException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataExportException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataImportException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/DataImportException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/exception/NoSuchFileTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/NoSuchFileTypeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManagerBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/FileManagerBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/SerializableFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/SerializableFileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,7 @@
       <workItem from="1621601133678" duration="1154000" />
       <workItem from="1621674311001" duration="2858000" />
       <workItem from="1621682949121" duration="556000" />
-      <workItem from="1621936187140" duration="1139000" />
+      <workItem from="1621936187140" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -223,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621677145160</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="FileManager: class implementing this interface must have methods for importing and exporting an object of the Library type&#10;FileType : serialized notation">
+      <created>1621938322592</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1621938322592</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Exception classes created">
+      <created>1621938484148</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1621938484148</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +271,8 @@
     <MESSAGE value=" made the program resistant to mistakes that the user may make when using the application&#10; separated the application logic from the presentation layer" />
     <MESSAGE value="prevent someone from accidentally creating a Publication object in the program" />
     <MESSAGE value="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all" />
-    <option name="LAST_COMMIT_MESSAGE" value="Option is now a private internal type in LibraryControl&#10;Private, because we do not use it anywhere else and no one except this class needs to know that such a type exists at all" />
+    <MESSAGE value="FileManager: class implementing this interface must have methods for importing and exporting an object of the Library type&#10;FileType : serialized notation" />
+    <MESSAGE value="Exception classes created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception classes created" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package pl.klaudia.library.exception;
 
-public class DataImportException extends Exception{
+public class DataImportException extends RuntimeException{
     public DataImportException(String message){
         super(message);
     }

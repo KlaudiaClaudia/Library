@@ -1,6 +1,6 @@
 package pl.klaudia.library.exception;
 
-public class DataExportException extends Exception{
+public class DataExportException extends RuntimeException{
     public DataExportException(String message){
         super(message);
     }
