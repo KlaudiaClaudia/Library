@@ -14,7 +14,9 @@ public abstract class Publication implements Serializable {
         this.year = year;
     }
 
-    public int getYear() {
+
+
+        public int getYear() {
         return year;
     }
 
@@ -55,4 +57,7 @@ public abstract class Publication implements Serializable {
     public int hashCode() {
         return Objects.hash(year, title, publisher);
     }
+    public abstract String toCsv();
+
+
 }

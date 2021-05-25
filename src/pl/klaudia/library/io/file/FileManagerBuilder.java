@@ -16,6 +16,8 @@ public class FileManagerBuilder {
         printer.printLine("Select the data format:");
         FileType fileType = getFileType();
         switch (fileType) {
+            case CSV:
+                return new CsvFileManager();
             case SERIAL:
                 return new SerializableFileManager();
             default:

@@ -6,6 +6,7 @@ public class Magazine extends Publication{
     private int month;
     private int day;
     private String language;
+    public static final String TYPE = "Magazine";
 
     public Magazine(String title,String publisher, String language,int year,int month, int day) {
         super(title,publisher,year);
@@ -55,5 +56,16 @@ public class Magazine extends Publication{
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), month, day, language);
+    }
+
+    @Override
+    public String toCsv() {
+        return (TYPE + ";") +
+                getTitle() + ";" +
+                getPublisher() + ";" +
+                getYear() + ";" +
+                month + ";" +
+                day + ";" +
+                language + "";
     }
 }

@@ -82,14 +82,14 @@ public class LibraryControl {
     private void printOptions() {
         printer.printLine("Select option: ");
         for (Option option : Option.values()) {
-            System.out.println(option);
+            System.out.println(option.toString());
         }
     }
 
     private void addBook() {
         try {
             Book book = dataReader.readAndCreateBook();
-            library.addBook(book);
+            library.addPublication(book);
         } catch (InputMismatchException e) {
             printer.printLine("Book creation failed, invalid data");
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -105,7 +105,7 @@ public class LibraryControl {
     private void addMagazine() {
         try {
             Magazine magazine = dataReader.readAndCreateMagazine();
-            library.addMagazine(magazine);
+            library.addPublication(magazine);
         } catch (InputMismatchException e) {
             printer.printLine("Magazine creation failed, invalid data");
         } catch (ArrayIndexOutOfBoundsException e) {
