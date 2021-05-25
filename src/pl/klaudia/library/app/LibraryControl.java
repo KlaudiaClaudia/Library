@@ -1,21 +1,39 @@
 package pl.klaudia.library.app;
 
+import pl.klaudia.library.exception.DataExportException;
+import pl.klaudia.library.exception.DataImportException;
 import pl.klaudia.library.exception.NoSuchOptionException;
 import pl.klaudia.library.io.ConsolePrinter;
 import pl.klaudia.library.io.DataReader;
+import pl.klaudia.library.io.file.FileManager;
+import pl.klaudia.library.io.file.FileManagerBuilder;
 import pl.klaudia.library.model.Book;
 import pl.klaudia.library.model.Library;
 import pl.klaudia.library.model.Magazine;
 import pl.klaudia.library.model.Publication;
 
+import java.io.File;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
 
     private ConsolePrinter printer = new ConsolePrinter();
     private DataReader dataReader = new DataReader(printer);
+    private FileManager fileManager;
 
-    private Library library = new Library();
+    private Library library;
+
+    LibraryControl(){
+        fileManager = new FileManagerBuilder(printer, dataReader).build();
+        try {
+            library = fileManager.importData();
+            printer.printLine("Imported data from a file");
+        } catch (DataImportException e) {
+            printer.printLine(e.getMessage());
+            printer.printLine("New base initiated.");
+            library = new Library();
+        }
+    }
 
     void controlLoop() {
         Option option;
@@ -101,6 +119,12 @@ public class LibraryControl {
     }
 
     private void exit() {
+        try {
+            fileManager.exportData(library);
+            printer.printLine("Successful data export to file");
+        } catch (DataExportException e) {
+            printer.printLine(e.getMessage());
+        }
         printer.printLine("End of program.");
         dataReader.close();
     }
