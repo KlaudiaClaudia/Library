@@ -11,8 +11,10 @@ import pl.klaudia.library.model.Book;
 import pl.klaudia.library.model.Library;
 import pl.klaudia.library.model.Magazine;
 import pl.klaudia.library.model.Publication;
+import pl.klaudia.library.model.comparator.AlphabeticalTitleComparator;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -122,6 +124,11 @@ public class LibraryControl {
     private void printMagazines() {
         Publication[] publications = library.getPublications();
         printer.printMagazines(publications);
+    }
+    private Publication[] getSortedPublications() {
+        Publication[] publications = library.getPublications();
+        Arrays.sort(publications, new AlphabeticalTitleComparator());
+        return publications;
     }
     private void deleteMagazine() {
         try {

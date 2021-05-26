@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Added csv type of file for files human-readable form">
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Added delete book and magazine option for user and method">
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/comparator/AlphabeticalTitleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/comparator/DateComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Publication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LibraryApp" />
@@ -80,7 +92,7 @@
       <workItem from="1621936187140" duration="6022000" />
       <workItem from="1621964738345" duration="5000" />
       <workItem from="1622018496742" duration="89000" />
-      <workItem from="1622052544393" duration="621000" />
+      <workItem from="1622052544393" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -250,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621943568119</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added delete book and magazine option for user and method">
+      <created>1622053299792</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1622053299793</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +312,7 @@
     <MESSAGE value="LibraryControl: constructor in which we try to load data from the file, if it exists, and when closing the application, we will try to save the current state of the application" />
     <MESSAGE value="changed file name" />
     <MESSAGE value="Added csv type of file for files human-readable form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added csv type of file for files human-readable form" />
+    <MESSAGE value="Added delete book and magazine option for user and method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete book and magazine option for user and method" />
   </component>
 </project>
