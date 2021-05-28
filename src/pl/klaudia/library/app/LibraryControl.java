@@ -3,18 +3,16 @@ package pl.klaudia.library.app;
 import pl.klaudia.library.exception.DataExportException;
 import pl.klaudia.library.exception.DataImportException;
 import pl.klaudia.library.exception.NoSuchOptionException;
+import pl.klaudia.library.exception.UserAlreadyExistsException;
 import pl.klaudia.library.io.ConsolePrinter;
 import pl.klaudia.library.io.DataReader;
 import pl.klaudia.library.io.file.FileManager;
 import pl.klaudia.library.io.file.FileManagerBuilder;
-import pl.klaudia.library.model.Book;
-import pl.klaudia.library.model.Library;
-import pl.klaudia.library.model.Magazine;
-import pl.klaudia.library.model.Publication;
+import pl.klaudia.library.model.*;
 import pl.klaudia.library.model.comparator.AlphabeticalTitleComparator;
 
-import java.io.File;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.InputMismatchException;
 
 public class LibraryControl {
@@ -50,11 +48,17 @@ public class LibraryControl {
                 case ADD_MAGAZINE:
                     addMagazine();
                     break;
+                case ADD_USER:
+                    addUser();
+                    break;
                 case PRINT_BOOKS:
                     printBooks();
                     break;
                 case PRINT_MAGAZINES:
                     printMagazines();
+                    break;
+                case PRINT_USERS:
+                    printUsers();
                     break;
                 case DELETE_BOOK:
                     deleteBook();
@@ -105,10 +109,7 @@ public class LibraryControl {
         }
     }
 
-    private void printBooks() {
-        Publication[] publications = library.getPublications();
-        printer.printBooks(publications);
-    }
+
 
     private void addMagazine() {
         try {
@@ -120,16 +121,25 @@ public class LibraryControl {
             printer.printLine("Capacity reached, no more magazine can be added");
         }
     }
+    private void addUser() {
+        LibraryUser libraryUser = dataReader.createLibraryUser();
+        try {
+            library.addUser(libraryUser);
+        } catch (UserAlreadyExistsException e) {
+            printer.printLine(e.getMessage());
+        }
+    }
 
+    private void printBooks() {
+        printer.printBooks(library.getPublications().values());
+    }
     private void printMagazines() {
-        Publication[] publications = library.getPublications();
-        printer.printMagazines(publications);
+        printer.printMagazines(library.getPublications().values());
     }
-    private Publication[] getSortedPublications() {
-        Publication[] publications = library.getPublications();
-        Arrays.sort(publications, new AlphabeticalTitleComparator());
-        return publications;
+    private void printUsers() {
+        printer.printUsers(library.getUsers().values());
     }
+
     private void deleteMagazine() {
         try {
             Magazine magazine = dataReader.readAndCreateMagazine();
@@ -141,7 +151,6 @@ public class LibraryControl {
             printer.printLine("Magazine creation failed, invalid data");
         }
     }
-
     private void deleteBook() {
         try {
             Book book = dataReader.readAndCreateBook();
@@ -172,7 +181,9 @@ public class LibraryControl {
         PRINT_BOOKS(3, "View available books"),
         PRINT_MAGAZINES(4, "View available magazines"),
         DELETE_BOOK(5, "Delete book"),
-        DELETE_MAGAZINE(6, "Delete magazine");
+        DELETE_MAGAZINE(6, "Delete magazine"),
+        ADD_USER(7, "Add new user"),
+        PRINT_USERS(8, "View users");
 
         private int value;
         private String description;

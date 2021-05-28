@@ -1,6 +1,7 @@
 package pl.klaudia.library.io;
 
 import pl.klaudia.library.model.Book;
+import pl.klaudia.library.model.LibraryUser;
 import pl.klaudia.library.model.Magazine;
 
 import java.util.Scanner;
@@ -26,6 +27,15 @@ public class DataReader {
         }finally {
            sc.nextLine();
         }
+    }
+    public LibraryUser createLibraryUser() {
+        printer.printLine("First name");
+        String firstName = sc.nextLine();
+        printer.printLine("Last name");
+        String lastName = sc.nextLine();
+        printer.printLine("Pesel");
+        String pesel = sc.nextLine();
+        return new LibraryUser(firstName, lastName, pesel);
     }
     public Book readAndCreateBook(){
         printer.printLine("Title: ");
