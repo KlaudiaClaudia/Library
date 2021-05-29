@@ -17,7 +17,7 @@ public class ConsolePrinter {
             }
         }
         if (counter == 0)
-            printLine("Brak książek w bibliotece");
+            printLine("No books in library");
     }
 
     public void printMagazines(Collection <Publication> publications) {
@@ -29,7 +29,7 @@ public class ConsolePrinter {
             }
         }
         if (counter == 0)
-            printLine("Brak magazynów w bibliotece");
+            printLine("No magazines in library");
     }
     public void printUsers(Collection<LibraryUser> users) {
         for (LibraryUser user : users) {

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Comparator for alphabetical and date">
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/PublicationAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/exception/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/LibraryUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/User.java" afterDir="false" />
+    <list default="true" id="990d9015-3365-4ed2-a68c-637a6000e3ed" name="Default Changelist" comment="Added user for library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/ConsolePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/CsvFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/io/file/CsvFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/klaudia/library/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,19 +53,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LibraryApp" />
@@ -101,7 +79,15 @@
       <workItem from="1621964738345" duration="5000" />
       <workItem from="1622018496742" duration="89000" />
       <workItem from="1622052544393" duration="1464000" />
-      <workItem from="1622192353709" duration="2173000" />
+      <workItem from="1622192353709" duration="2462000" />
+      <workItem from="1622209491077" duration="4000" />
+      <workItem from="1622216051983" duration="10000" />
+      <workItem from="1622228310380" duration="49000" />
+      <workItem from="1622228968179" duration="185000" />
+      <workItem from="1622270721990" duration="8000" />
+      <workItem from="1622274057824" duration="78000" />
+      <workItem from="1622276875972" duration="272000" />
+      <workItem from="1622277452657" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="Added Library class and Book;&#10;Book class into JavaBeans">
       <created>1621512760391</created>
@@ -285,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622053912045</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added user for library">
+      <created>1622194822010</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194822011</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +297,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Board for new books in class Library" />
     <MESSAGE value="Package io (input/output) for DataReader class" />
     <MESSAGE value="Created menu for data from user" />
     <MESSAGE value="LibraryControl: loop for user option&#10;LibraryApp: main class for program" />
@@ -329,6 +321,7 @@
     <MESSAGE value="Added csv type of file for files human-readable form" />
     <MESSAGE value="Added delete book and magazine option for user and method" />
     <MESSAGE value="Comparator for alphabetical and date" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comparator for alphabetical and date" />
+    <MESSAGE value="Added user for library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user for library" />
   </component>
 </project>
